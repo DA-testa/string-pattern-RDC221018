@@ -9,7 +9,7 @@ def read_input():
         elif 'F' in text:
             name = input()
             if not 'a' in name: 
-                name = "test/" + name
+                name = "tests/" + name
                 f = open(name, "r")
                 pattern = f.readline().rstrip()
                 text = f.readline().rstrip()
