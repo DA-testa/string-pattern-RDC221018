@@ -7,7 +7,7 @@ def read_input():
         if 'I' in text:
             return (input().rstrip(), input().rstrip())
         elif 'F' in text:
-            name = input()
+            name = "06"
             if not 'a' in name: 
                 name = "tests/" + name
                 f = open(name, "r")
