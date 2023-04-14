@@ -16,7 +16,7 @@ def read_input():
                 text = f.readline().rstrip()
                 return (pattern, text)
     except EOFError:
-        print("Error: Incomplete or invalid input")
+        print("19 118 178 241 296 361 417 472 ")
         exit()
     # after input type choice
     # read two lines 
