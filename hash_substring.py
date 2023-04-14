@@ -9,11 +9,11 @@ def read_input():
         elif 'F' in text:
             name = input()
             if not 'a' in name: 
-                name = "tests/" + name
-                    f = open(name, "r")
-                    pattern = f.readline().rstrip()
-                    text = f.readline().rstrip()
-                    return (pattern, text)
+                name = "test/" + name
+                f = open(name, "r")
+                pattern = f.readline().rstrip()
+                text = f.readline().rstrip()
+                return (pattern, text)
     # after input type choice
     # read two lines 
     # first line is pattern 
