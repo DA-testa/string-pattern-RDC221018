@@ -7,11 +7,11 @@ def read_input():
         if 'I' in text:
             return (input().rstrip(), input().rstrip())
         elif 'F' in text:
-            name = input()
-            if not 'a' in name: 
-                name = "tests/"+name
+            name1 = input()
+            if not 'a' in name1: 
+                name1 = "tests/"+name1
                 try:
-                    f = open(name, "r")
+                    f = open(name1, "r")
                     pattern = f.readline().rstrip()
                     text = f.readline().rstrip()
                     return (pattern, text)
