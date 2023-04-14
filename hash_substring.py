@@ -3,7 +3,6 @@
 def read_input():
     # this function needs to aquire input both from keyboard and file
     # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
-    try:
         text = input()
         if 'I' in text:
             return (input().rstrip(), input().rstrip())
@@ -11,20 +10,13 @@ def read_input():
             name = input()
             if not 'a' in name: 
                 name = "tests/"+name
-                f = open(name, "r")
-                pattern = f.readline().rstrip()
-                text = f.readline().rstrip()
-                return (pattern, text)
-    except EOFError:
-        #print("19 118 178 241 296 361 417 472 ")
-        name = input()
-            if not 'a' in name: 
-                name = "tests/"+name
-                f = open(name, "r")
-                pattern = f.readline().rstrip()
-                text = f.readline().rstrip()
-                return (pattern, text)
-        exit()
+                try:
+                    f = open(name, "r")
+                    pattern = f.readline().rstrip()
+                    text = f.readline().rstrip()
+                    return (pattern, text)
+                except EOFError:
+                    return None
     # after input type choice
     # read two lines 
     # first line is pattern 
