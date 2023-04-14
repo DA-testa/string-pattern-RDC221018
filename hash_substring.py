@@ -16,7 +16,14 @@ def read_input():
                 text = f.readline().rstrip()
                 return (pattern, text)
     except EOFError:
-        print("19 118 178 241 296 361 417 472 ")
+        #print("19 118 178 241 296 361 417 472 ")
+        name = input()
+            if not 'a' in name: 
+                name = "tests/"+name
+                f = open(name, "r")
+                pattern = f.readline().rstrip()
+                text = f.readline().rstrip()
+                return (pattern, text)
         exit()
     # after input type choice
     # read two lines 
